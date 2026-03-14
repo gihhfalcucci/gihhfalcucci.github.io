@@ -387,7 +387,7 @@
   }
 
   .stat-card {
-    @apply rounded-[20px] border px-6 py-6 text-center;
+    @apply flex h-full min-h-[140px] flex-col items-center justify-between gap-3 rounded-[20px] border px-6 py-6 text-center;
     background: var(--cream);
     border-color: rgba(183, 110, 121, 0.08);
   }
@@ -398,8 +398,12 @@
     color: var(--rose);
   }
 
+  .stat-number-cro {
+    @apply block w-full pt-5 text-center text-[1.4rem] leading-[1.2];
+  }
+
   .stat-label {
-    @apply mt-1 text-[0.85rem];
+    @apply text-[0.85rem] leading-[1.35];
     color: var(--text-soft);
   }
 
