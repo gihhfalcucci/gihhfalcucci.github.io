@@ -393,13 +393,27 @@
   }
 
   .stat-number {
-    @apply text-[2.4rem] font-bold;
+    @apply text-[2.4rem] font-bold leading-[1.05] lining-nums tabular-nums;
     font-family: var(--font-serif);
+    font-feature-settings: "lnum" 1, "tnum" 1;
     color: var(--rose);
   }
 
   .stat-number-cro {
     @apply block w-full pt-5 text-center text-[1.4rem] leading-[1.2];
+  }
+
+  .stat-number-rating {
+    @apply inline-flex items-center justify-center gap-2;
+  }
+
+  .stat-star {
+    @apply text-[1.95rem] leading-none;
+    transform: translateY(1px);
+  }
+
+  .stat-score {
+    @apply leading-none;
   }
 
   .stat-label {
