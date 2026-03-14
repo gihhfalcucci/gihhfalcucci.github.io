@@ -212,11 +212,15 @@
       border-radius: 200px 200px 40px 40px;
       overflow: hidden; position: relative;
       box-shadow: 0 30px 80px rgba(92,36,52,0.18);
-      border: 5px solid var(--white);
+      border: 5px solid transparent;
+      background-image: linear-gradient(var(--white), var(--white)), linear-gradient(135deg, var(--rose-glow), var(--cream-deep));
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
     }
     .hero-photo-frame img {
       width: 100%; height: 100%; object-fit: cover;
-      background: linear-gradient(135deg, var(--rose-glow), var(--cream-deep));
+      object-position: center 20%;
+      background: var(--white);
     }
     .hero-float-badge {
       position: absolute; background: var(--white);
@@ -569,14 +573,6 @@
       <div class="hero-photo-wrap fade-up">
         <div class="hero-photo-frame">
           <img src="assets/profile.png" alt="Dra. Giovanna" />
-        </div>
-        <div class="hero-float-badge top-badge">
-          <div class="badge-icon rose">&#10029;</div>
-          <div><strong>+2.000</strong><br><small style="color:var(--text-soft)">Pacientes atendidos</small></div>
-        </div>
-        <div class="hero-float-badge bottom-badge">
-          <div class="badge-icon gold">&#9829;</div>
-          <div><strong>CRO Ativo</strong><br><small style="color:var(--text-soft)">Especialista</small></div>
         </div>
       </div>
     </div>
