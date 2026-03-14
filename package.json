@@ -1,0 +1,13 @@
+{
+  "name": "giovanna-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./src/tailwind.css -o ./dist/styles.css --watch",
+    "build": "tailwindcss -i ./src/tailwind.css -o ./dist/styles.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.2.1",
+    "tailwindcss": "^4.2.1"
+  }
+}
