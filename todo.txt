@@ -1,2 +1,1 @@
 - texto de Alfenas - MG no paragrafo to hero a texto de MG está indo para linha de baixo (fazer ficar na mesma linha ou passar mais texto pra baixo)
-- melhorar fundo da imagem do hero
