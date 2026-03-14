@@ -408,9 +408,12 @@
   }
 
   .about-img {
-    @apply w-full rounded-[30px] object-cover;
+    @apply w-full rounded-[30px] object-cover border-[5px] border-solid;
     aspect-ratio: 3 / 4;
-    background: linear-gradient(135deg, var(--rose-glow), var(--cream-deep));
+    border-color: transparent;
+    background-image: linear-gradient(var(--white), var(--white)), linear-gradient(135deg, var(--rose-glow), var(--cream-deep));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
     box-shadow: var(--shadow);
   }
 
