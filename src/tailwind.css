@@ -159,6 +159,11 @@
     background: #1877f2;
   }
 
+  .social-btn.location .social-icon {
+    @apply h-[18px] w-[18px];
+    filter: invert(18%) sepia(22%) saturate(1106%) hue-rotate(300deg) brightness(90%) contrast(90%);
+  }
+
   .hamburger {
     @apply relative hidden h-6 w-8 cursor-pointer border-0 bg-transparent;
   }
@@ -642,6 +647,19 @@
   .btn-outline-light:hover {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .cta-btns .btn-base {
+    @apply inline-flex items-center gap-2;
+  }
+
+  .cta-btns .social-icon {
+    @apply h-[18px] w-[18px];
+    filter: brightness(0) invert(1);
+  }
+
+  .cta-btns a[href*="maps"] .social-icon {
+    @apply h-5 w-5;
   }
 
   .site-footer {
