@@ -397,10 +397,12 @@
   .about-stats {
     @apply mt-8 grid gap-5;
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
   }
 
   .stat-card {
     @apply flex h-full min-h-[148px] flex-col items-center justify-center gap-3 rounded-[20px] border px-6 py-6 text-center;
+    min-width: 0;
     background: var(--cream);
     border-color: rgba(183, 110, 121, 0.08);
   }
@@ -815,6 +817,7 @@
   }
 
   .about-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
   }
 
@@ -831,6 +834,12 @@
   .stat-label {
     min-height: 2.5em;
     font-size: 0.82rem;
+  }
+
+  .stat-number-cro {
+    white-space: normal;
+    font-size: 1.25rem;
+    line-height: 1.15;
   }
 
   .service-card p {
