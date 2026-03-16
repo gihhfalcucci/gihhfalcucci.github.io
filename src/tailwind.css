@@ -159,9 +159,17 @@
     background: #1877f2;
   }
 
+  .social-btn.facebook {
+    display: none;
+  }
+
   .social-btn.location .social-icon {
     @apply h-[18px] w-[18px];
-    filter: invert(18%) sepia(22%) saturate(1106%) hue-rotate(300deg) brightness(90%) contrast(90%);
+    filter: invert(16%) sepia(87%) saturate(2800%) hue-rotate(347deg) brightness(93%) contrast(97%);
+  }
+
+  .nav-socials .social-btn.location .social-icon {
+    margin-right: -3px;
   }
 
   .hamburger {
@@ -659,7 +667,8 @@
   }
 
   .cta-btns a[href*="maps"] .social-icon {
-    @apply h-5 w-5;
+    @apply h-6 w-6;
+    filter: brightness(0) invert(1);
   }
 
   .site-footer {
