@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "tailwindcss -i ./src/tailwind.css -o ./dist/styles.css --watch",
-    "build": "tailwindcss -i ./src/tailwind.css -o ./dist/styles.css --minify"
+    "build": "tailwindcss -i ./src/tailwind.css -o ./dist/styles.css --minify",
+    "build:single": "npm run build && node ./scripts/build-single-html.cjs"
   },
   "devDependencies": {
     "@tailwindcss/cli": "4.2.1",
