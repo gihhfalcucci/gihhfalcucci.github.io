@@ -1,5 +1,5 @@
 {
-  "name": "Dra. Giovanna",
+  "name": "Dra. Giovanna Odontologia",
   "short_name": "Dra. Giovanna",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#fff8f0",
+  "background_color": "#fff8f0",
   "display": "standalone"
 }
